@@ -1,0 +1,165 @@
+.menu{
+    background-color: green;
+    width: 100%;
+    padding: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    position: sticky;
+    top: 0;
+}
+.menu a{
+    color: azure;
+    padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+.menu a:hover{
+    background-color: azure;
+    color: green;
+}
+body{
+    background-color: black;
+}
+.login{
+    margin: 0 auto;
+    width: 300px;
+    color: azure;
+    margin-top: 100px;
+    background-color: darkgreen;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.login h1{
+    text-align: center;
+}
+.login label{
+    font-size: 20px;
+}
+.login input{
+    margin-left: -10px;
+    width: 290px;
+    font-size: larger;
+}
+.login button{
+    background-color: black;
+    color: lightgreen;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 20px;
+    width: 130px;
+    margin-left: 40px;
+}
+.login p{
+    font-size: 20px;
+    color: black;
+}
+.login a{
+    color: azure;
+}
+.h1{
+    color: azure;
+}
+.table{
+    color: azure;
+    margin-top: 30px;
+}
+.table a{
+    text-decoration: none;
+}
+.a{
+    margin-left: 40px;
+    background-color: green;
+    color: azure;
+    padding: 10px;
+    font-size: large;
+    text-decoration: none;
+    border-radius: 30px;
+    position: sticky;
+    top: 50px;
+    
+}
+.table table{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+}
+.table th{
+    background-color: green;
+}
+.table td{
+    background-color: azure;
+    color: black;
+    text-align: center;
+}
+.profile{
+    color: azure;
+    text-align: center;
+    background-color: green;
+    margin: 0 auto;
+    width: 250px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.profile a{
+    padding: 10px;
+    font-size: large;
+    text-decoration: none;
+    background-color: black;
+    color: lightgreen;
+    border-radius: 20px;
+}
+.event{
+    color: azure;
+    margin: 0 auto;
+    width: 265px;
+    background-color: green;
+    margin-top: 70px;
+    padding-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.event label{
+    font-size: 20px;
+}
+.event input{
+    width: 250px;
+}
+.event button{
+    background-color: black;
+    color: lightgreen;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.peserta{
+    color: azure;
+    margin: 0 auto;
+    width: 300px;
+    background-color: green;
+    margin-top: 70px;
+    padding-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.peserta label{
+    font-size: 20px;
+}
+.peserta select{
+    width: 280px;
+}
+.peserta input{
+    width: 273px;
+}
+.peserta button{
+    cursor: pointer;
+    background-color: black;
+    color: lightgreen;
+    border-radius: 20px;
+    font-size: large;
+    margin-left: 20px;
+}

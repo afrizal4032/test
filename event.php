@@ -1,0 +1,47 @@
+<?php
+require "template/header.php";
+require "template/menu.php";
+if($_SESSION["username"] && $_SESSION["password"]){}else{
+    echo "<script>window.location.href = 'login.php'</script>";
+}
+$query = mysqli_query($conn, "SELECT * FROM lomba");
+?>
+<div class="table">
+<a class="a" href="tambahevent.php">Tambah event</a>
+<table class="text-center" border=1 cellpadding=10 cellspacing=0>
+    <tr>
+        <th>No</th>
+        <th>Event lomba</th>
+        <th>Penyelenggara</th>
+        <th colspan=2>Aksi</th>
+    </tr>
+    <?php $i = 1 ?>
+    <?php while ($result = mysqli_fetch_assoc($query)) : ?>
+        <tr>
+            <th><?= $i ?></th>
+            <td><?= $result["nama"] ?></td>
+            <td><?= $result["penyelenggara"] ?></td>
+            <td><a href="editevent.php?id=<?= $result["id"] ?>">Edit</a></td>
+            <td><a onclick="hapus(<?= $result['id'] ?>)" href="#">Hapus</a></td>
+            <?php $i++ ?>
+        </tr>
+    <?php endwhile; ?>
+</table>
+</div>
+<script>
+    function hapus(id) {
+        swal.fire({
+            title: "WARNING!",
+            text: "Data ini akan dihapus?",
+            icon: "warning",
+            showCancelButton: true,
+            cancelButtonColor: "red",
+            confirmButtonColor: "#3085d6",
+            confirmButtonText: "YES!"
+        }).then((result) => {
+            if(result.isConfirmed){
+                window.location.href = "hapusevent.php?id=" + id
+            }
+        })
+    }   
+</script>
